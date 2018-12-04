@@ -4,22 +4,22 @@ page 51113 Gitpage
     ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = "Exchange Object";
-    
+
     layout
     {
         area(Content)
         {
             group(GroupName)
             {
-                field("Item ID";"Item ID")
+                field("Item ID"; "Item ID")
                 {
                     ApplicationArea = All;
-                    
+
                 }
             }
         }
     }
-    
+
     actions
     {
         area(Processing)
@@ -27,15 +27,15 @@ page 51113 Gitpage
             action(sample)
             {
                 ApplicationArea = All;
-                
+
                 trigger OnAction()
                 begin
-                    Message('Success1');
+                    Message('Success');
                 end;
             }
         }
     }
-    
+
     var
         myInt: Integer;
 }
