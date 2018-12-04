@@ -26,6 +26,7 @@ page 51112 CustCard
     trigger OnOpenPage();
     begin
         Message('App published: Hello world');
+        Message('Git initialized Successfully');
     end;
 
 }
