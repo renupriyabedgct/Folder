@@ -30,6 +30,7 @@ page 51113 Gitpage
 
                 trigger OnAction()
                 begin
+                    custpage.Run();
                     Message('Success');
                 end;
             }
@@ -37,5 +38,5 @@ page 51113 Gitpage
     }
 
     var
-        myInt: Integer;
+        custpage:Page "Customer List";
 }
