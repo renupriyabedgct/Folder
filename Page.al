@@ -3,7 +3,7 @@ page 51113 Gitpage
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "Exchange Object";
+    SourceTable = Customer;
 
     layout
     {
@@ -11,7 +11,7 @@ page 51113 Gitpage
         {
             group(GroupName)
             {
-                field("Item ID"; "Item ID")
+                field("No."; "No.")
                 {
                     ApplicationArea = All;
 
@@ -34,9 +34,18 @@ page 51113 Gitpage
                     Message('Success');
                 end;
             }
+            action(Report)
+            {
+                ApplicationArea = ALL;
+                trigger OnAction()
+                begin
+                    custreport.Run();
+                end;
+            }
         }
     }
 
     var
-        custpage:Page "Customer List";
+        custpage: Page "Customer List";
+        custreport: Report "Customer - List";
 }
