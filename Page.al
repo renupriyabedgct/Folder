@@ -46,6 +46,10 @@ page 51113 Gitpage
                     custreport.Run();
                 end;
             }
+            action(CuDemo)
+            {
+                
+            }
         }
     }
 

@@ -28,9 +28,10 @@ page 51112 CustCard
         Message('App published: Hello world');
         Message('Git initialized Successfully');
         gitpage.Run();
+        Message('GITpage run possible');
     end;
 
     var
-        gitpage: Page Gitpage;
+        gitpage:page Gitpage;
 
 }
