@@ -16,6 +16,10 @@ page 51113 Gitpage
                     ApplicationArea = All;
 
                 }
+                field("Name";"Name")
+                {
+                   ApplicationArea = All;
+                }
             }
         }
     }
