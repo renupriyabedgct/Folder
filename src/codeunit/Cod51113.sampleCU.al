@@ -1,4 +1,4 @@
-codeunit 51113 sampleCU
+codeunit 51113 "sampleCU"
 {
     trigger OnRun()
     begin
